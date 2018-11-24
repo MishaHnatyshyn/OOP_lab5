@@ -9,7 +9,7 @@ list<string> generateList(string str){
     list<string> list;
     char separator = ',';
     int start = 0 , length = 0;
-    for (int i = 0; i <= str.length()-1; ++i) {
+    for (int i = 0; i < str.length(); i++) {
         if (str[i] == separator || i == str.length()-1){
             length = i - start;
             string temp = str.substr(start,length);
