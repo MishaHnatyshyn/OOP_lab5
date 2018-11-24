@@ -13,7 +13,7 @@ list<string> generateList(string str){
         if (str[i] == separator || i == str.length()-1){
             length = i - start;
             string temp = str.substr(start,length);
-            start +=length + 1;
+            start = i + 1;
             list.push_back(temp);
         }
     }
